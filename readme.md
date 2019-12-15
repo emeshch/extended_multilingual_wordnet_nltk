@@ -7,7 +7,7 @@ So, you found yourself in a situation when you need to browse Afrikaans WordNet.
 * get semantically related synsets
 * compute  various similarity measures for a pair of synsets.
 
-NLTK WordNet Interface supports OMW – Open Multilingual Wordnet (http://compling.hss.ntu.edu.sg/omw/), but EOMW, being built automatically, is considered to be of lower confidence, and therefore is not currently supported (see https://github.com/nltk/nltk/issues/1611). Yet, there is a way.
+NLTK WordNet Interface supports OMW – [Open Multilingual Wordnet](http://compling.hss.ntu.edu.sg/omw/), but EOMW, being built automatically, is considered to be of lower confidence, and therefore is not currently supported (see https://github.com/nltk/nltk/issues/1611). Yet, there is a way.
 
 1. Check that you've installed NLTK and downloaded Wordnet and OMW 'corpora' for NLTK:
 ```python
@@ -17,11 +17,13 @@ nltk.download('omw')
 Find nltk_data/ directory with /corpora/omw/ and a subdirectory for all available languages in it.
 
 
-2. Download EOMW (http://compling.hss.ntu.edu.sg/omw/summx.html) and locate the target language file. In case of Old English this would be /wikt/wn-wikt-ang.tab.
+2. Download [EOMW](http://compling.hss.ntu.edu.sg/omw/summx.html) and locate the target language file. In case of Old English this would be /wikt/wn-wikt-ang.tab.
 
 
-3. Create a dir for your language in /nltk_data/corpora/omw/ and put the file from EOMW in it. Thanks to a great stackoverflow answer (https://stackoverflow.com/a/45218884), we now know that a language dir/file name should be named according to the pattern:
+3. Create a dir for your language in /nltk_data/corpora/omw/ and put the file from EOMW in it. Thanks to a great [stackoverflow answer](https://stackoverflow.com/a/45218884), we now know that a language dir/file name should be named according to the pattern:
+```
 /nltk_data/corpora/omw/xxx/wn-data-xxx.tab
+```
 where xxx may be, for example, the ISO-639 language code (ang for Old English).
 
 4. Now you're good to go:
