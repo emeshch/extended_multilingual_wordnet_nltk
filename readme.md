@@ -33,8 +33,13 @@ where xxx may be, for example, the ISO-639 language code (ang for Old English).
 
 
 
+
+
+
 NLTK WordNet Interface (https://www.nltk.org/howto/wordnet.html)
+
 Open Multilingual Wordnet (http://compling.hss.ntu.edu.sg/omw/)
+
 Extended Open Multilingual Wordnet (http://compling.hss.ntu.edu.sg/omw/summx.html)
 
 
